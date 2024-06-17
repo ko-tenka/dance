@@ -1,0 +1,22 @@
+.navConteiner{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.comp1{
+  
+   color: white;
+   padding-top: 20px;
+   padding-left: 60px;
+   padding-right: 60px;
+   /* background-color: rgba(0, 0, 0, 0.7); */
+   /* z-index: 1;  */
+}
+
+.str{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.7);
+}

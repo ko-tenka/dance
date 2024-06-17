@@ -1,0 +1,13 @@
+#inputMain{
+    width: 400px;
+}
+.Formtxt{
+    color: white;
+}
+.ant-form-item-label {
+    color: white;
+  }
+.btnForm{
+    background-color: white;
+    color: black;
+}

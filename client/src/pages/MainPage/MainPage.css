@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    letter-spacing: -0.02em; 
+}
+.glavnayaSFoto{
+    height:1000px;
+    background-image: url('https://images.unsplash.com/photo-1621976360623-004223992275?q=80&w=3228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; 
+    background-position: center; 
+    background-color: pink;
+    margin-top: -50px;
+    }
+    .glavnayaSFoto::after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 950px;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1; 
+    }
+    .glavnayaSFotoTXT1{
+        z-index: 3; 
+        color: white;
+        padding-top: 70px;
+        width: 500px;
+        font-size: 22px;
+    }
+
+    .pin{
+        width: 200px;
+        /* margin-top: 100px; */
+        }
+        .glavnayaSFotoTXTDiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            position: absolute;
+            width: 45%;
+            margin-left: 30%;
+            margin-top: 250px;
+            z-index: 2; 
+        }
+        .probClass{
+            width: 100%;
+            height: 320px;
+            background-color: #E94793;
+            color: white;
+        }
+        .probClassTxt1{
+            font-size: 40px;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .probClassTxt2{
+            font-size: 28px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .probClassTxt3{
+            font-size: 28px;
+            text-align: center;
+            margin-top: 10px;
+            color: black;
+        }
+        
+        .oStudii{
+            width: 100%;
+            height: 320px;
+            background-color: black;
+        }
+        .oStudiiTxt1,
+        .oStudiiTxt2,
+        .oStudiiTxt3 {
+            color: white;
+            font-size: 28px;
+            text-align: left;
+            width: 70%;
+            margin: auto;
+        }
+        .oStudiiTxt1{
+            padding-top: 60px;
+        }
+        .oStudiiTxt3{
+            margin-top: 50px;
+        }
+        .newScholl{
+            width: 100%;
+            height: 100px;
+   
+            margin-bottom: 70px;
+            background-color: white;
+            color: black;
+        }
+        .newSchollTxt1{
+            font-size: 40px;
+            text-align: center;
+            padding-top: 40px;
+        }
