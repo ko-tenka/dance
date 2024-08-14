@@ -18,7 +18,7 @@ export default memo(function List(): JSX.Element {
   }, [dispatch]);
 
   return (
-    <div style={{display: 'flex', flexWrap: 'wrap'}}>
+    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
       {posts.length && posts ?
         posts?.map((post: IPost) => 
         <Card post={post} key={post.id} />)

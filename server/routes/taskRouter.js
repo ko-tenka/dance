@@ -13,14 +13,34 @@ const multer = require('multer')
 const path = require('path');
 
 
+// const storage = multer.diskStorage({
+//     destination:function (req, file, cb) {
+//         cb (null, 'images');
+//     },
+//     filename: function (req, file, cb) {
+//         cb(null, `Photo${Date.now()}${path.extname(file.originalname)}`);
+//     }
+// })
+
+
+
+
+
+
+
+
+
+const { v4: uuidv4 } = require('uuid'); 
+
 const storage = multer.diskStorage({
-    destination:function (req, file, cb) {
-        cb (null, 'public/');
+    destination: (req, file, cb) => {
+        cb(null, 'images');
     },
-    filename: function (req, file, cb) {
-        cb(null, `Photo${Date.now()}${path.extname(file.originalname)}`);
+    filename: (req, file, cb) => {
+         const uniqueSuffix = uuidv4() + path.extname(file.originalname);
+        cb(null, uniqueSuffix);
     }
-})
+});
 const upload = multer({storage:storage})
 
 
@@ -50,17 +70,38 @@ router.get('/', async (req, res) => {
 //     res.json({err: error})
 //   }
 // });
-router.post('/', upload.any(), async (req, res) => {
+// router.post('/', upload.single('img'), async (req, res) => {
+//   console.log('Заходим в ручку!!!!!!!!!')
+//   try {
+//     let fileName = null;
+//     if (req.files && req.files.length > 0) {
+//       fileName = req.files[0].filename;
+//     }
+//     const { title, description } = req.body;
+//     const postData = { 
+//       title, 
+//       description, 
+//       img: fileName 
+//     };
+//     const post = await Task.create(postData);
+//     res.json(post);
+//   } catch (error) {
+//     res.json({ err: error });
+//   }
+// });
+
+router.post('/', upload.single('img'), async (req, res) => {
+  console.log('Заходим в ручку!!!!!!!!!');
   try {
     let fileName = null;
-    if (req.files && req.files.length > 0) {
-      fileName = req.files[0].filename;
+    if (req.file) {
+      fileName = req.file.filename;
     }
     const { title, description } = req.body;
-    const postData = { 
-      title, 
-      description, 
-      img: fileName 
+    const postData = {
+      title,
+      description,
+      img: fileName
     };
     const post = await Task.create(postData);
     res.json(post);
@@ -68,7 +109,6 @@ router.post('/', upload.any(), async (req, res) => {
     res.json({ err: error });
   }
 });
-
 
 
 

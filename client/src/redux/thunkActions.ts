@@ -8,6 +8,7 @@ export const fetchPosts = createAsyncThunk('posts/all', async () => { // 'posts/
     const response = await axios.get<PostsType>(`http://localhost:3000/api/task/`); // URL ТУТ
     console.log("=======> консоль в санках на 9", response.data)
     return response.data; //* это payload
+
   } catch (error) {
     console.log(error);
   }
@@ -19,8 +20,8 @@ export const fetchAddPost = createAsyncThunk('posts/add', async (inputs: IInputs
       `http://localhost:3000/api/task/`,
       inputs,
     );
-    console.log(response)
-    console.log(response.data)
+    console.log('23 санки', response)
+    console.log('24 санки', response.data)
     return response.data;
     
   } catch (error) {

@@ -2,14 +2,41 @@
   border-radius: 8px;
   border: 1px solid transparent;
   border-color: pink;
-  width: 150px;
+  width: 300px;
   word-wrap: break-word;
  justify-content: center;
- margin-right: 30px;
- margin-left: 30px;
+ margin: 30px;
+ background-color: rgb(233, 71, 147);;
 }
 
 .BtnCardDelete{
   background-color: white;
   color: black;
+  text-align: center;
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+.imgFormat{
+  padding: 2%;
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+
+}
+.description,
+.title{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.title{
+  font-size: 20px;
+}
+.description{
+  background-color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 8px;
 }
