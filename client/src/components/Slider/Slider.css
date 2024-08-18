@@ -1,0 +1,79 @@
+/* .conteiner_carusel{
+
+    background-color: #E94793;
+}
+.carusel{
+
+    justify-content: center;
+}
+.cont{
+    display: flex;
+    height: 300px;
+    background-size: cover; 
+
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-size: cover; 
+    background-position: center; 
+} */
+/* Убираем отступы и поля у body и html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .container_carousel {
+    background-color: #E94793;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide {
+    position: relative;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0.7, 0.7, 0.7, 0.5), transparent);
+    z-index: 1; /* Помещает затемнение поверх изображения */
+  }
+  .photo {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+  }
+  
+  .text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 2
+  }
+  
