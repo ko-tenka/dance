@@ -107,10 +107,20 @@
 
         .apiConteiner{
             background-color: black;
+            position: relative;
         }
         .api{
-            padding-top: 100px;
-            padding-left: 25%;
+            width: 60%;
+            height: 550px;
+
+            position: relative;
+            /* z-index: 1; */
+            padding-top: 100px; 
+            /* padding-left: 20%;  */
+            /* background-color: #E94793; */
+            margin-left: 20%;
+  
+     
         }
         .contant1{
             text-align: center;
