@@ -45,7 +45,7 @@ const onFinishFailed = (errorInfo: any) => {
       autoComplete="off"
     >
       <Form.Item
-        label={<span style={{ color: 'white' }}>Логин</span>}
+        label={<span style={{ color: 'black' }}>Логин</span>}
         name="login"
         rules={[{ required: true, message: 'Пожалуйста, введите логин!' }]}
       >
@@ -53,7 +53,7 @@ const onFinishFailed = (errorInfo: any) => {
       </Form.Item>
 
       <Form.Item
-        label={<span style={{ color: 'white' }}>Почта</span>}
+        label={<span style={{ color: 'black' }}>Почта</span>}
         name="email"
         rules={[{ required: true, message: 'Пожалуйста, введите почту!' }]}
       >
@@ -61,7 +61,7 @@ const onFinishFailed = (errorInfo: any) => {
       </Form.Item>
 
       <Form.Item
-        label={<span style={{ color: 'white' }}>Пароль</span>}
+        label={<span style={{ color: 'black' }}>Пароль</span>}
         name="password"
         rules={[{ required: true, message: 'Пожалуйста, введите пароль!' }]}
       >

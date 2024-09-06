@@ -5,10 +5,11 @@
 }
 .comp1{
   
-   color: white;
+ 
    padding-top: 20px;
    padding-left: 60px;
    padding-right: 60px;
+   color: black;
    /* background-color: rgba(0, 0, 0, 0.7); */
    /* z-index: 1;  */
 }
@@ -18,5 +19,19 @@
     justify-content: center;
     width: 100%;
     z-index: 1; 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: black;
 }
+
+@media(max-width: 767px){
+    .navConteiner{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+    .comp1{
+       padding-left: 10px;
+       padding-right: 10px;
+       
+    }
+    
+} 

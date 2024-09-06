@@ -7,6 +7,10 @@
     font-weight: 300;
     letter-spacing: -0.02em; 
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 .glavnayaSFoto{
     height:1000px;
     background-image: url('https://images.unsplash.com/photo-1621976360623-004223992275?q=80&w=3228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -159,8 +163,92 @@
             text-align: center;
             margin-top: 50px;
         }
+        .contant2{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
         .contactConteiner{
             text-align: center;
             margin-top: 70px;
             padding-bottom: 20px;
+            background-color: black;
         }
+
+
+        /* @media(min-width: 768px){
+            .navConteiner_phone{
+                display: none;
+                
+            }
+        }  */
+@media(max-width: 767px){
+    .glavnayaSFoto{
+        height:750px;
+        }
+    .glavnayaSFotoTXTDiv{
+
+        width: 90%;
+        margin-left: 0%;
+        margin-top: 200px;
+    }
+    .glavnayaSFoto::after {
+        height: 700px;
+    }
+    .probClass{
+        width: 100%;
+        height: 250px;
+    }
+    .probClassTxt1{
+        font-size: 30px;
+    }
+    .probClassTxt2{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .oStudii{
+        height: 500px;
+    }
+    .oStudiiTxt1,
+    .oStudiiTxt2,
+    .oStudiiTxt3 {
+        color: white;
+        font-size: 24px;
+        text-align: left;
+        width: 90%;
+        margin: auto;
+    }
+    .oStudiiTxt1{
+        padding-top: 50px;
+    }
+    .oStudiiTxt3{
+        margin-top: 30px;
+    }
+
+
+
+    .apiConteiner{
+        background-color: black;
+        position: relative;
+       
+    }
+    .api{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 0px;
+        height: 600px;
+ 
+    }
+
+    .contant1{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: -30px;
+    }
+    .contactConteiner{
+        text-align: center;
+        margin-top: 70px;
+        padding-bottom: 20px;
+    }
+
+} 

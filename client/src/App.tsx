@@ -11,13 +11,13 @@ import LogoutPage from './pages/LogoutPage/LogoutPage'
 function App(): JSX.Element {
   return (
     <>
-      <Navbar/>
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/reg' element={<RegPage/>}/>
         <Route path='/logout' element={<LogoutPage/>}/>
       </Routes>
+      <Navbar/>
 
     </>
   );

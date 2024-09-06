@@ -17,7 +17,7 @@ export default function Teacher() {
     </div>
     {/* <img src="./line1.PNG" alt="линия" />
     <img src="./line2.PNG" alt="линия" /> */}
-    <img className='./line3.PNG' src="./line3.PNG" alt="линия" />
+    <img className='line' src="./line3.PNG" alt="линия" />
     </div>
   )
 }

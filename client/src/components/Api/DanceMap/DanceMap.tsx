@@ -21,7 +21,7 @@ export default function DanceMap() {
             
 
               // key={`point${camp.id}`}
-              geometry={[55.873481, 37.317580]}
+              geometry={[55.871834,37.311472]}
             
                        options={{
                          preset: 'islands#icon', // Внешний вид метки
