@@ -47,7 +47,10 @@ html {
 
 
 
-
+.nav_glav{
+    z-index: 3;
+    position: relative;
+}
 
 
 

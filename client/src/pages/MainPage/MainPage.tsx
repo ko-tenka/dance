@@ -68,7 +68,9 @@ import Navbarglav from '../../components/Navbarglav.tsx/Navbarglav';
 export default function MainPage() {
   return (
     <div>
+      <div className='nav_glav'>
       <Navbarglav/>
+      </div>
       <div className='glavnayaSFotoTXTDiv'>
         <img src="/pin.PNG" className="pin" alt="Тут есть знак" />
         <h1 className='glavnayaSFotoTXT1'>"Ритм в сердце, грация в движениях: танцуй свою историю с нами!"</h1>
